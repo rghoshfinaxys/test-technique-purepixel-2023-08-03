@@ -1,0 +1,36 @@
+<div id="game">
+    <div id="game-container">
+        <h1>wordle simplifié</h1>
+        <span style="font-style: italic;">
+            hover pour faire aparaitre le mot à deviner
+        </span>
+        <div id="mot">{{word}}</div>
+        <div class="subtitle">Tentatives</div>
+        <div class="board">
+            <!-- 
+                placer ici les tentatives, dans un div de class "guess" et chaque lettre dans un
+                span de classes "letter" et "bonendroit|mauvaisendroit|nonpresent".
+
+                Exemple:
+            -->
+            <div class="guess">
+                <span class="letter bonendroit">m</span>
+                <span class="letter nonpresent">o</span>
+                <span class="letter mauvaisendroit">i</span>
+                <span class="letter bonendroit">g</span>
+                <span class="letter bonendroit">e</span>
+            </div>
+        </div>
+        <div class="input">
+            <div>
+                deviner mot:
+            </div>
+            <!-- 
+                lier le champ text à un contrôle, s'assurer que sa valeur ne comporte jamais 
+                plus que 5 lettres et écouter l'event <ENTER> pour ajouter la tentative à la liste des 
+                tentatives. 
+            -->
+            <input class="inputControl" type="text" />
+        </div>
+    </div>
+</div>
